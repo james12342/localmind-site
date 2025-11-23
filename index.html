@@ -50,32 +50,42 @@
             Bring <span class="text-indigo-400">ChatGPT-level</span><br class="hidden sm:block" />
             intelligence into your own infrastructure
           </h1>
-          <p class="text-sm sm:text-base text-slate-300 mb-6">
+          <p class="text-sm sm:text-base text-slate-300">
             LocalMind AI helps companies deploy fully private, on-premise AI platforms and
             intelligent agents based on Dify and state-of-the-art open-source models.
             From architecture and deployment to business-specific workflows, we deliver
             end-to-end solutions that actually ship.
           </p>
-          <ul class="mt-6 space-y-2 text-slate-300 text-sm">
-  <li class="flex items-start space-x-2">
-    <span class="text-indigo-400 mt-1">•</span>
-    <span>Deploy fully private LLMs with zero cloud dependency.</span>
-  </li>
-  <li class="flex items-start space-x-2">
-    <span class="text-indigo-400 mt-1">•</span>
-    <span>Build custom AI agents for operations, support, logistics, and finance.</span>
-  </li>
-  <li class="flex items-start space-x-2">
-    <span class="text-indigo-400 mt-1">•</span>
-    <span>Integrate with ERP, CRM, SQL databases, internal APIs, and legacy systems.</span>
-  </li>
-  <li class="flex items-start space-x-2">
-    <span class="text-indigo-400 mt-1">•</span>
-    <span>Use Dify, DeepSeek, Qwen, and Llama in a unified on-prem platform.</span>
-  </li>
-</ul>
 
-          <div class="flex flex-wrap items-center gap-3 mb-6">
+          <!-- ✅ 新增：突出亮点区 -->
+          <div class="mt-6">
+            <div class="text-xs uppercase tracking-wide text-slate-400 mb-2">
+              Why teams choose LocalMind AI
+            </div>
+            <div class="grid sm:grid-cols-3 gap-3 text-xs sm:text-sm">
+              <div class="rounded-xl border border-slate-800 bg-slate-900/70 p-3">
+                <div class="text-indigo-300 font-semibold mb-1">Self-hosted LLM stack</div>
+                <p class="text-slate-300">
+                  Run DeepSeek, Qwen, Llama and more entirely inside your own infrastructure.
+                </p>
+              </div>
+              <div class="rounded-xl border border-slate-800 bg-slate-900/70 p-3">
+                <div class="text-indigo-300 font-semibold mb-1">Real agents &amp; workflows</div>
+                <p class="text-slate-300">
+                  Go beyond chatbots with agents that read, write and automate real processes.
+                </p>
+              </div>
+              <div class="rounded-xl border border-slate-800 bg-slate-900/70 p-3">
+                <div class="text-indigo-300 font-semibold mb-1">Deep system integration</div>
+                <p class="text-slate-300">
+                  Connect to ERP, CRM, SQL databases and internal APIs with production-grade glue.
+                </p>
+              </div>
+            </div>
+          </div>
+          <!-- ✅ 新增区结束 -->
+
+          <div class="flex flex-wrap items-center gap-3 mt-6 mb-6">
             <a href="#contact" class="px-5 py-2.5 rounded-full bg-indigo-500 hover:bg-indigo-400 text-sm font-medium">
               Schedule a 1:1 Consultation
             </a>
@@ -101,12 +111,11 @@
 
         <!-- Hero Side: main image + cards -->
         <div class="space-y-4">
-          <!-- ✅ 主视觉图片：如果文件名不同，只改 src 即可 -->
           <img
-  src="assets/hero-dashboard.png"
-  alt="LocalMind AI on-premise dashboard"
-  class="w-full h-64 sm:h-72 rounded-2xl border border-slate-800 bg-slate-900/60 object-cover object-top"
-/>
+            src="assets/hero-dashboard.png"
+            alt="LocalMind AI on-premise dashboard"
+            class="w-full h-64 sm:h-72 rounded-2xl border border-slate-800 bg-slate-900/60 object-cover object-top"
+          />
 
           <div class="rounded-2xl border border-slate-800 bg-slate-900/60 p-4 text-xs sm:text-sm">
             <div class="flex justify-between items-center mb-2">
@@ -160,6 +169,7 @@
         </div>
       </div>
     </section>
+
 
     <!-- Why On-Prem -->
     <section id="solutions" class="py-10 border-t border-slate-800">
