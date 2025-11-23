@@ -14,12 +14,14 @@
 
   <body class="bg-slate-950 text-slate-50">
     <!-- Top Navigation -->
+      <!-- Top Navigation -->
     <header
       class="sticky top-0 z-30 bg-slate-950/80 backdrop-blur border-b border-slate-800"
     >
       <div
         class="max-w-6xl mx-auto flex items-center justify-between px-4 py-3"
       >
+        <!-- Logo -->
         <div class="flex items-center space-x-2">
           <div
             class="w-8 h-8 rounded-2xl bg-indigo-500 flex items-center justify-center font-bold text-sm"
@@ -34,6 +36,7 @@
           </div>
         </div>
 
+        <!-- Desktop Nav -->
         <nav class="hidden md:flex space-x-6 text-sm">
           <a href="#hero" class="hover:text-indigo-400">Home</a>
           <a href="#solutions" class="hover:text-indigo-400">Solutions</a>
@@ -44,14 +47,85 @@
           <a href="#contact" class="hover:text-indigo-400">Contact</a>
         </nav>
 
+        <!-- Desktop CTA -->
         <a
           href="#contact"
           class="hidden md:inline-flex text-xs sm:text-sm px-4 py-2 rounded-full bg-indigo-500 hover:bg-indigo-400 transition"
         >
           Book a Demo
         </a>
+
+        <!-- Mobile hamburger button -->
+        <button
+          id="mobile-menu-button"
+          class="md:hidden inline-flex items-center justify-center p-2 rounded-lg border border-slate-700 text-slate-200 hover:border-indigo-400 hover:text-indigo-300"
+          aria-label="Open main menu"
+          aria-expanded="false"
+        >
+          <span class="sr-only">Open main menu</span>
+          <span class="block w-5 h-0.5 bg-current mb-1 rounded"></span>
+          <span class="block w-5 h-0.5 bg-current mb-1 rounded"></span>
+          <span class="block w-5 h-0.5 bg-current rounded"></span>
+        </button>
+      </div>
+
+      <!-- Mobile Nav -->
+      <div
+        id="mobile-menu"
+        class="md:hidden max-w-6xl mx-auto px-4 pb-3 space-y-1 text-sm bg-slate-950/95 border-t border-slate-800 hidden"
+      >
+        <a
+          href="#hero"
+          class="block py-2 text-slate-200 hover:text-indigo-300"
+        >
+          Home
+        </a>
+        <a
+          href="#solutions"
+          class="block py-2 text-slate-200 hover:text-indigo-300"
+        >
+          Solutions
+        </a>
+        <a
+          href="#features"
+          class="block py-2 text-slate-200 hover:text-indigo-300"
+        >
+          Product
+        </a>
+        <a
+          href="#pricing"
+          class="block py-2 text-slate-200 hover:text-indigo-300"
+        >
+          Pricing
+        </a>
+        <a
+          href="#cases"
+          class="block py-2 text-slate-200 hover:text-indigo-300"
+        >
+          Use Cases
+        </a>
+        <a
+          href="#about"
+          class="block py-2 text-slate-200 hover:text-indigo-300"
+        >
+          About
+        </a>
+        <a
+          href="#contact"
+          class="block py-2 text-slate-200 hover:text-indigo-300"
+        >
+          Contact
+        </a>
+
+        <a
+          href="#contact"
+          class="mt-1 inline-flex w-full justify-center rounded-full bg-indigo-500 px-4 py-2 text-xs font-medium text-slate-50 hover:bg-indigo-400"
+        >
+          Book a Demo
+        </a>
       </div>
     </header>
+
 
     <main class="max-w-6xl mx-auto px-4">
       <!-- Hero Section -->
