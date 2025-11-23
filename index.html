@@ -1,469 +1,707 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <title>LocalMind AI · On-Premise AI Agents & Private LLM Platform</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <meta name="description" content="LocalMind AI helps companies deploy on-premise LLM platforms and AI agents based on Dify and modern open-source models. Private, secure, integrated with your existing systems." />
-  <!-- Tailwind CDN -->
-  <script src="https://cdn.tailwindcss.com"></script>
-</head>
-<body class="bg-slate-950 text-slate-50">
-  <!-- Top Navigation -->
-  <header class="sticky top-0 z-30 bg-slate-950/80 backdrop-blur border-b border-slate-800">
-    <div class="max-w-6xl mx-auto flex items-center justify-between px-4 py-3">
-      <div class="flex items-center space-x-2">
-        <div class="w-8 h-8 rounded-2xl bg-indigo-500 flex items-center justify-center font-bold text-sm">
-          LM
+  <head>
+    <meta charset="UTF-8" />
+    <title>LocalMind AI · On-Premise AI Agents &amp; Private LLM Platform</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta
+      name="description"
+      content="LocalMind AI helps companies deploy on-premise LLM platforms and AI agents based on Dify and modern open-source models. Private, secure, integrated with your existing systems."
+    />
+    <!-- Tailwind CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+
+  <body class="bg-slate-950 text-slate-50">
+    <!-- Top Navigation -->
+    <header
+      class="sticky top-0 z-30 bg-slate-950/80 backdrop-blur border-b border-slate-800"
+    >
+      <div
+        class="max-w-6xl mx-auto flex items-center justify-between px-4 py-3"
+      >
+        <div class="flex items-center space-x-2">
+          <div
+            class="w-8 h-8 rounded-2xl bg-indigo-500 flex items-center justify-center font-bold text-sm"
+          >
+            LM
+          </div>
+          <div>
+            <div class="font-semibold text-sm sm:text-base">LocalMind AI</div>
+            <div class="text-xs text-slate-400 hidden sm:block">
+              On-Premise AI &amp; Agents
+            </div>
+          </div>
         </div>
-        <div>
-          <div class="font-semibold text-sm sm:text-base">LocalMind AI</div>
-          <div class="text-xs text-slate-400 hidden sm:block">On-Premise AI &amp; Agents</div>
-        </div>
+
+        <nav class="hidden md:flex space-x-6 text-sm">
+          <a href="#hero" class="hover:text-indigo-400">Home</a>
+          <a href="#solutions" class="hover:text-indigo-400">Solutions</a>
+          <a href="#features" class="hover:text-indigo-400">Product</a>
+          <a href="#pricing" class="hover:text-indigo-400">Pricing</a>
+          <a href="#cases" class="hover:text-indigo-400">Use Cases</a>
+          <a href="#about" class="hover:text-indigo-400">About</a>
+          <a href="#contact" class="hover:text-indigo-400">Contact</a>
+        </nav>
+
+        <a
+          href="#contact"
+          class="hidden md:inline-flex text-xs sm:text-sm px-4 py-2 rounded-full bg-indigo-500 hover:bg-indigo-400 transition"
+        >
+          Book a Demo
+        </a>
       </div>
-      <nav class="hidden md:flex space-x-6 text-sm">
-        <a href="hero" class="hover:text-indigo-400">Home</a>
-        <a href="solutions" class="hover:text-indigo-400">Solutions</a>
-        <a href="features" class="hover:text-indigo-400">Product</a>
-        <a href="pricing" class="hover:text-indigo-400">Pricing</a>
-        <a href="cases" class="hover:text-indigo-400">Use Cases</a>
-        <a href="about" class="hover:text-indigo-400">About</a>
-        <a href="contact" class="hover:text-indigo-400">Contact</a>
-      </nav>
-      <a href="#contact" class="hidden md:inline-flex text-xs sm:text-sm px-4 py-2 rounded-full bg-indigo-500 hover:bg-indigo-400 transition">
-        Book a Demo
-      </a>
-    </div>
-  </header>
+    </header>
 
-  <main class="max-w-6xl mx-auto px-4">
-
-    <!-- Hero Section -->
-    <section id="hero" class="py-12 sm:py-20">
-      <div class="grid md:grid-cols-2 gap-10 items-start">
-        <div>
-          <div class="inline-flex items-center px-3 py-1 rounded-full bg-slate-800 border border-slate-700 text-xs mb-4">
-            <span class="w-2 h-2 rounded-full bg-emerald-400 mr-2"></span>
-            Private LLMs · On-Premise · Enterprise-grade integration
-          </div>
-          <h1 class="text-3xl sm:text-4xl md:text-5xl font-semibold leading-tight mb-4">
-            Bring <span class="text-indigo-400">ChatGPT-level</span><br class="hidden sm:block" />
-            intelligence into your own infrastructure
-          </h1>
-          <p class="text-sm sm:text-base text-slate-300">
-            LocalMind AI helps companies deploy fully private, on-premise AI platforms and
-            intelligent agents based on Dify and state-of-the-art open-source models.
-            From architecture and deployment to business-specific workflows, we deliver
-            end-to-end solutions that actually ship.
-          </p>
-
-          <!-- ✅ 新增：突出亮点区 -->
-          <div class="mt-6">
-            <div class="text-xs uppercase tracking-wide text-slate-400 mb-2">
-              Why teams choose LocalMind AI
+    <main class="max-w-6xl mx-auto px-4">
+      <!-- Hero Section -->
+      <section id="hero" class="py-12 sm:py-20">
+        <div class="grid md:grid-cols-2 gap-10 items-start">
+          <div>
+            <div
+              class="inline-flex items-center px-3 py-1 rounded-full bg-slate-800 border border-slate-700 text-xs mb-4"
+            >
+              <span class="w-2 h-2 rounded-full bg-emerald-400 mr-2"></span>
+              Private LLMs · On-Premise · Enterprise-grade integration
             </div>
-            <div class="grid sm:grid-cols-3 gap-3 text-xs sm:text-sm">
-              <div class="rounded-xl border border-slate-800 bg-slate-900/70 p-3">
-                <div class="text-indigo-300 font-semibold mb-1">Self-hosted LLM stack</div>
-                <p class="text-slate-300">
-                  Run DeepSeek, Qwen, Llama and more entirely inside your own infrastructure.
-                </p>
+
+            <h1
+              class="text-3xl sm:text-4xl md:text-5xl font-semibold leading-tight mb-4"
+            >
+              Bring
+              <span class="text-indigo-400">ChatGPT-level</span
+              ><br class="hidden sm:block" />
+              intelligence into your own infrastructure
+            </h1>
+
+            <p class="text-sm sm:text-base text-slate-300">
+              LocalMind AI helps companies deploy fully private, on-premise AI
+              platforms and intelligent agents based on Dify and state-of-the-art
+              open-source models. From architecture and deployment to
+              business-specific workflows, we deliver end-to-end solutions that
+              actually ship.
+            </p>
+
+            <!-- 突出亮点区 -->
+            <div class="mt-6">
+              <div
+                class="text-xs uppercase tracking-wide text-slate-400 mb-2"
+              >
+                Why teams choose LocalMind AI
               </div>
-              <div class="rounded-xl border border-slate-800 bg-slate-900/70 p-3">
-                <div class="text-indigo-300 font-semibold mb-1">Real agents &amp; workflows</div>
-                <p class="text-slate-300">
-                  Go beyond chatbots with agents that read, write and automate real processes.
-                </p>
-              </div>
-              <div class="rounded-xl border border-slate-800 bg-slate-900/70 p-3">
-                <div class="text-indigo-300 font-semibold mb-1">Deep system integration</div>
-                <p class="text-slate-300">
-                  Connect to ERP, CRM, SQL databases and internal APIs with production-grade glue.
-                </p>
-              </div>
-            </div>
-          </div>
-          <!-- ✅ 新增区结束 -->
 
-          <div class="flex flex-wrap items-center gap-3 mt-6 mb-6">
-            <a href="#contact" class="px-5 py-2.5 rounded-full bg-indigo-500 hover:bg-indigo-400 text-sm font-medium">
-              Schedule a 1:1 Consultation
-            </a>
-            <a href="#solutions" class="px-4 py-2 rounded-full border border-slate-600 text-xs sm:text-sm hover:border-indigo-400 hover:text-indigo-300">
-              Explore Solutions
-            </a>
-          </div>
+              <div class="grid sm:grid-cols-3 gap-3 text-xs sm:text-sm">
+                <div
+                  class="rounded-xl border border-slate-800 bg-slate-900/70 p-3"
+                >
+                  <div class="text-indigo-300 font-semibold mb-1">
+                    Self-hosted LLM stack
+                  </div>
+                  <p class="text-slate-300">
+                    Run DeepSeek, Qwen, Llama and more entirely inside your own
+                    infrastructure.
+                  </p>
+                </div>
 
-          <!-- Tech Stack Pills -->
-<div class="mt-8 flex flex-wrap gap-2">
-  <span class="px-3 py-1 rounded-full bg-slate-800 border border-slate-700 text-xs text-slate-300">
-    DeepSeek
-  </span>
-  <span class="px-3 py-1 rounded-full bg-slate-800 border border-slate-700 text-xs text-slate-300">
-    Qwen 2.5
-  </span>
-  <span class="px-3 py-1 rounded-full bg-slate-800 border border-slate-700 text-xs text-slate-300">
-    Llama 3.1
-  </span>
-  <span class="px-3 py-1 rounded-full bg-slate-800 border border-slate-700 text-xs text-slate-300">
-    Dify Orchestration
-  </span>
-  <span class="px-3 py-1 rounded-full bg-slate-800 border border-slate-700 text-xs text-slate-300">
-    vLLM
-  </span>
-  <span class="px-3 py-1 rounded-full bg-slate-800 border border-slate-700 text-xs text-slate-300">
-    SGLang
-  </span>
-  <span class="px-3 py-1 rounded-full bg-slate-800 border border-slate-700 text-xs text-slate-300">
-    Ollama
-  </span>
-  <span class="px-3 py-1 rounded-full bg-slate-800 border border-slate-700 text-xs text-slate-300">
-    Docker
-  </span>
-  <span class="px-3 py-1 rounded-full bg-slate-800 border border-slate-700 text-xs text-slate-300">
-    Kubernetes
-  </span>
-</div>
+                <div
+                  class="rounded-xl border border-slate-800 bg-slate-900/70 p-3"
+                >
+                  <div class="text-indigo-300 font-semibold mb-1">
+                    Real agents &amp; workflows
+                  </div>
+                  <p class="text-slate-300">
+                    Go beyond chatbots with agents that read, write and automate
+                    real processes.
+                  </p>
+                </div>
 
-          
-          <div class="grid grid-cols-3 gap-4 text-xs sm:text-sm text-slate-300">
-            <div>
-              <div class="text-lg sm:text-xl font-semibold">100%</div>
-              <div class="text-slate-400">Data stays on-prem</div>
-            </div>
-            <div>
-              <div class="text-lg sm:text-xl font-semibold">3–8 weeks</div>
-              <div class="text-slate-400">Typical delivery time</div>
-            </div>
-            <div>
-              <div class="text-lg sm:text-xl font-semibold">Multi-model</div>
-              <div class="text-slate-400">DeepSeek · Qwen · Llama</div>
-            </div>
-          </div>
-        </div>
-
-    
-
-        
-        <!-- Hero Side: main image + cards -->
-        <div class="space-y-4">
-          <img
-            src="assets/hero-dashboard.png"
-            alt="LocalMind AI on-premise dashboard"
-            class="w-full h-64 sm:h-72 rounded-2xl border border-slate-800 bg-slate-900/60 object-cover object-top"
-          />
-
-          <div class="rounded-2xl border border-slate-800 bg-slate-900/60 p-4 text-xs sm:text-sm">
-            <div class="flex justify-between items-center mb-2">
-              <span class="text-slate-300">AI Support Agent</span>
-              <span class="text-[10px] text-emerald-400 bg-emerald-900/30 px-2 py-0.5 rounded-full">Online · On-Prem</span>
-            </div>
-            <div class="space-y-2">
-              <div class="bg-slate-800/80 rounded-xl px-3 py-2">
-                <div class="text-[10px] text-slate-400">User</div>
-                <div>Please check the status of this order and draft an English email reply for the customer.</div>
-              </div>
-              <div class="bg-indigo-900/40 border border-indigo-500/40 rounded-xl px-3 py-2 ml-6">
-                <div class="text-[10px] text-slate-400">LocalMind AI</div>
-                <div>
-                  I found order <strong>#WF-2025-0118</strong> in your internal order system.
-                  It has been shipped via UPS. Tracking number: <strong>1ZXXXX...</strong>.
+                <div
+                  class="rounded-xl border border-slate-800 bg-slate-900/70 p-3"
+                >
+                  <div class="text-indigo-300 font-semibold mb-1">
+                    Deep system integration
+                  </div>
+                  <p class="text-slate-300">
+                    Connect to ERP, CRM, SQL databases and internal APIs with
+                    production-grade glue.
+                  </p>
                 </div>
               </div>
             </div>
+
+            <!-- 按钮 -->
+            <div class="flex flex-wrap items-center gap-3 mt-6 mb-6">
+              <a
+                href="#contact"
+                class="px-5 py-2.5 rounded-full bg-indigo-500 hover:bg-indigo-400 text-sm font-medium"
+              >
+                Schedule a 1:1 Consultation
+              </a>
+              <a
+                href="#solutions"
+                class="px-4 py-2 rounded-full border border-slate-600 text-xs sm:text-sm hover:border-indigo-400 hover:text-indigo-300"
+              >
+                Explore Solutions
+              </a>
+            </div>
+
+            <!-- Tech Stack Pills -->
+            <div class="mt-8 flex flex-wrap gap-2">
+              <span
+                class="px-3 py-1 rounded-full bg-slate-800 border border-slate-700 text-xs text-slate-300"
+              >
+                DeepSeek
+              </span>
+              <span
+                class="px-3 py-1 rounded-full bg-slate-800 border border-slate-700 text-xs text-slate-300"
+              >
+                Qwen 2.5
+              </span>
+              <span
+                class="px-3 py-1 rounded-full bg-slate-800 border border-slate-700 text-xs text-slate-300"
+              >
+                Llama 3.1
+              </span>
+              <span
+                class="px-3 py-1 rounded-full bg-slate-800 border border-slate-700 text-xs text-slate-300"
+              >
+                Dify Orchestration
+              </span>
+              <span
+                class="px-3 py-1 rounded-full bg-slate-800 border border-slate-700 text-xs text-slate-300"
+              >
+                vLLM
+              </span>
+              <span
+                class="px-3 py-1 rounded-full bg-slate-800 border border-slate-700 text-xs text-slate-300"
+              >
+                SGLang
+              </span>
+              <span
+                class="px-3 py-1 rounded-full bg-slate-800 border border-slate-700 text-xs text-slate-300"
+              >
+                Ollama
+              </span>
+              <span
+                class="px-3 py-1 rounded-full bg-slate-800 border border-slate-700 text-xs text-slate-300"
+              >
+                Docker
+              </span>
+              <span
+                class="px-3 py-1 rounded-full bg-slate-800 border border-slate-700 text-xs text-slate-300"
+              >
+                Kubernetes
+              </span>
+            </div>
+
+            <!-- 统计 -->
+            <div
+              class="mt-6 grid grid-cols-3 gap-4 text-xs sm:text-sm text-slate-300"
+            >
+              <div>
+                <div class="text-lg sm:text-xl font-semibold">100%</div>
+                <div class="text-slate-400">Data stays on-prem</div>
+              </div>
+              <div>
+                <div class="text-lg sm:text-xl font-semibold">3–8 weeks</div>
+                <div class="text-slate-400">Typical delivery time</div>
+              </div>
+              <div>
+                <div class="text-lg sm:text-xl font-semibold">Multi-model</div>
+                <div class="text-slate-400">DeepSeek · Qwen · Llama</div>
+              </div>
+            </div>
           </div>
 
-          <div class="rounded-2xl border border-slate-800 bg-slate-900/40 p-4 text-xs sm:text-sm">
-            <div class="flex justify-between mb-2">
-              <span class="text-slate-300">Workflow · Dify Orchestration</span>
-              <span class="text-[10px] text-slate-400">Concept</span>
+          <!-- Hero Side: main image + cards -->
+          <div class="space-y-4">
+            <img
+              src="assets/hero-dashboard.png"
+              alt="LocalMind AI on-premise dashboard"
+              class="w-full h-64 sm:h-72 rounded-2xl border border-slate-800 bg-slate-900/60 object-cover object-top"
+            />
+
+            <div
+              class="rounded-2xl border border-slate-800 bg-slate-900/60 p-4 text-xs sm:text-sm"
+            >
+              <div class="flex justify-between items-center mb-2">
+                <span class="text-slate-300">AI Support Agent</span>
+                <span
+                  class="text-[10px] text-emerald-400 bg-emerald-900/30 px-2 py-0.5 rounded-full"
+                  >Online · On-Prem</span
+                >
+              </div>
+              <div class="space-y-2">
+                <div class="bg-slate-800/80 rounded-xl px-3 py-2">
+                  <div class="text-[10px] text-slate-400">User</div>
+                  <div>
+                    Please check the status of this order and draft an English
+                    email reply for the customer.
+                  </div>
+                </div>
+                <div
+                  class="bg-indigo-900/40 border border-indigo-500/40 rounded-xl px-3 py-2 ml-6"
+                >
+                  <div class="text-[10px] text-slate-400">LocalMind AI</div>
+                  <div>
+                    I found order <strong>#WF-2025-0118</strong> in your
+                    internal order system. It has been shipped via UPS. Tracking
+                    number: <strong>1ZXXXX...</strong>.
+                  </div>
+                </div>
+              </div>
             </div>
-            <div class="grid grid-cols-3 gap-3 text-[11px]">
-              <div class="rounded-xl bg-slate-800/70 p-2 text-center">
-                <div class="font-semibold mb-1">Trigger</div>
-                <div>New order<br/>or CSV import</div>
+
+            <div
+              class="rounded-2xl border border-slate-800 bg-slate-900/40 p-4 text-xs sm:text-sm"
+            >
+              <div class="flex justify-between mb-2">
+                <span class="text-slate-300">Workflow · Dify Orchestration</span>
+                <span class="text-[10px] text-slate-400">Concept</span>
               </div>
-              <div class="rounded-xl bg-slate-800/70 p-2 text-center">
-                <div class="font-semibold mb-1">AI Logic</div>
-                <div>Validate data<br/>detect anomalies</div>
+              <div class="grid grid-cols-3 gap-3 text-[11px]">
+                <div class="rounded-xl bg-slate-800/70 p-2 text-center">
+                  <div class="font-semibold mb-1">Trigger</div>
+                  <div>
+                    New order<br />
+                    or CSV import
+                  </div>
+                </div>
+                <div class="rounded-xl bg-slate-800/70 p-2 text-center">
+                  <div class="font-semibold mb-1">AI Logic</div>
+                  <div>
+                    Validate data<br />
+                    detect anomalies
+                  </div>
+                </div>
+                <div class="rounded-xl bg-slate-800/70 p-2 text-center">
+                  <div class="font-semibold mb-1">Action</div>
+                  <div>
+                    Write to DB<br />
+                    send emails / alerts
+                  </div>
+                </div>
               </div>
-              <div class="rounded-xl bg-slate-800/70 p-2 text-center">
-                <div class="font-semibold mb-1">Action</div>
-                <div>Write to DB<br/>send emails / alerts</div>
-              </div>
+            </div>
+
+            <div
+              class="rounded-2xl border border-slate-800 bg-gradient-to-r from-slate-900/80 to-indigo-900/40 p-4 text-xs sm:text-sm"
+            >
+              <div class="text-slate-300 mb-2">Deployment options</div>
+              <ul class="space-y-1 text-slate-300">
+                <li>• Single-node Docker deployment (PoC &amp; small teams)</li>
+                <li>
+                  • GPU-accelerated deployment (4090 / A6000 / Blackwell)
+                </li>
+                <li>
+                  • On-prem cluster with optional Kubernetes support
+                </li>
+              </ul>
             </div>
           </div>
+        </div>
+      </section>
 
-          <div class="rounded-2xl border border-slate-800 bg-gradient-to-r from-slate-900/80 to-indigo-900/40 p-4 text-xs sm:text-sm">
-            <div class="text-slate-300 mb-2">Deployment options</div>
-            <ul class="space-y-1 text-slate-300">
-              <li>• Single-node Docker deployment (PoC &amp; small teams)</li>
-              <li>• GPU-accelerated deployment (4090 / A6000 / Blackwell)</li>
-              <li>• On-prem cluster with optional Kubernetes support</li>
+      <!-- Why On-Prem -->
+      <section id="solutions" class="py-10 border-t border-slate-800">
+        <h2 class="text-2xl sm:text-3xl font-semibold mb-3">
+          End-to-End On-Prem AI Solutions
+        </h2>
+        <p class="text-sm sm:text-base text-slate-300 mb-6">
+          We combine open-source building blocks like Dify with battle-tested
+          engineering practices to deliver AI systems that are secure,
+          maintainable, and deeply integrated into your business.
+        </p>
+
+        <div class="grid md:grid-cols-3 gap-6 text-sm mb-8">
+          <div
+            class="border border-slate-800 bg-slate-900/60 rounded-2xl p-5"
+          >
+            <h3 class="font-semibold mb-2">Private LLM Platform</h3>
+            <ul class="space-y-1 text-slate-300 text-xs sm:text-sm">
+              <li>• Docker-based deployment on your own servers</li>
+              <li>• Support for DeepSeek, Qwen, Llama and more</li>
+              <li>• Connect to local Ollama / vLLM / SGLang backends</li>
+              <li>• GPU scheduling and model routing for multi-GPU setups</li>
+            </ul>
+          </div>
+
+          <div
+            class="border border-slate-800 bg-slate-900/60 rounded-2xl p-5"
+          >
+            <h3 class="font-semibold mb-2">Enterprise AI Agent Hub</h3>
+            <ul class="space-y-1 text-slate-300 text-xs sm:text-sm">
+              <li>
+                • Custom agents for support, operations, finance, logistics and
+                more
+              </li>
+              <li>• Visual workflow editor with branching, loops and triggers</li>
+              <li>• Tool calling: HTTP APIs, DB queries, scripts, message queues</li>
+              <li>• RAG knowledge bases built from your internal documentation</li>
+            </ul>
+          </div>
+
+          <div
+            class="border border-slate-800 bg-slate-900/60 rounded-2xl p-5"
+          >
+            <h3 class="font-semibold mb-2">
+              Integration &amp; Custom Engineering
+            </h3>
+            <ul class="space-y-1 text-slate-300 text-xs sm:text-sm">
+              <li>• Integrations with ERP, CRM, WMS, custom back-office tools</li>
+              <li>
+                • Support for SQL Server, MySQL, PostgreSQL, Oracle and more
+              </li>
+              <li>• Custom admin dashboards, monitoring, analytics</li>
+              <li>• Training, documentation and long-term support options</li>
             </ul>
           </div>
         </div>
-      </div>
-    </section>
 
+        <!-- 解决方案示意图片 -->
+        <div
+          class="rounded-2xl border border-slate-800 bg-slate-900/60 p-4"
+        >
+          <img
+            src="assets/workflow-diagram.png"
+            alt="LocalMind AI workflow diagram"
+            class="w-full rounded-xl object-cover max-h-80"
+          />
+        </div>
+      </section>
 
-    <!-- Why On-Prem -->
-    <section id="solutions" class="py-10 border-t border-slate-800">
-      <h2 class="text-2xl sm:text-3xl font-semibold mb-3">End-to-End On-Prem AI Solutions</h2>
-      <p class="text-sm sm:text-base text-slate-300 mb-6">
-        We combine open-source building blocks like Dify with battle-tested engineering practices
-        to deliver AI systems that are secure, maintainable, and deeply integrated into your business.
-      </p>
-
-      <div class="grid md:grid-cols-3 gap-6 text-sm mb-8">
-        <div class="border border-slate-800 bg-slate-900/60 rounded-2xl p-5">
-          <h3 class="font-semibold mb-2">Private LLM Platform</h3>
-          <ul class="space-y-1 text-slate-300 text-xs sm:text-sm">
-            <li>• Docker-based deployment on your own servers</li>
-            <li>• Support for DeepSeek, Qwen, Llama and more</li>
-            <li>• Connect to local Ollama / vLLM / SGLang backends</li>
-            <li>• GPU scheduling and model routing for multi-GPU setups</li>
-          </ul>
-        </div>
-        <div class="border border-slate-800 bg-slate-900/60 rounded-2xl p-5">
-          <h3 class="font-semibold mb-2">Enterprise AI Agent Hub</h3>
-          <ul class="space-y-1 text-slate-300 text-xs sm:text-sm">
-            <li>• Custom agents for support, operations, finance, logistics and more</li>
-            <li>• Visual workflow editor with branching, loops and triggers</li>
-            <li>• Tool calling: HTTP APIs, DB queries, scripts, message queues</li>
-            <li>• RAG knowledge bases built from your internal documentation</li>
-          </ul>
-        </div>
-        <div class="border border-slate-800 bg-slate-900/60 rounded-2xl p-5">
-          <h3 class="font-semibold mb-2">Integration &amp; Custom Engineering</h3>
-          <ul class="space-y-1 text-slate-300 text-xs sm:text-sm">
-            <li>• Integrations with ERP, CRM, WMS, custom back-office tools</li>
-            <li>• Support for SQL Server, MySQL, PostgreSQL, Oracle and more</li>
-            <li>• Custom admin dashboards, monitoring, analytics</li>
-            <li>• Training, documentation and long-term support options</li>
-          </ul>
-        </div>
-      </div>
-
-      <!-- ✅ 解决方案示意图片（可选） -->
-      <div class="rounded-2xl border border-slate-800 bg-slate-900/60 p-4">
-        <img
-          src="assets/workflow-diagram.png"
-          alt="LocalMind AI workflow diagram"
-          class="w-full rounded-xl object-cover max-h-80"
-        />
-      </div>
-    </section>
-
-    <!-- Product Features -->
-    <section id="features" class="py-10 border-t border-slate-800">
-      <h2 class="text-2xl sm:text-3xl font-semibold mb-3">Product Capabilities</h2>
-      <p class="text-sm sm:text-base text-slate-300 mb-6">
-        From model management and knowledge retrieval to workflow automation and system integration,
-        LocalMind AI gives you a flexible toolkit to design and operate AI agents at scale.
-      </p>
-      <div class="grid md:grid-cols-2 gap-4 text-xs sm:text-sm">
-        <div class="border border-slate-800 rounded-2xl p-4 bg-slate-900/50">
-          <h3 class="font-semibold mb-2">Models &amp; Knowledge Bases</h3>
-          <ul class="list-disc list-inside text-slate-300 space-y-1">
-            <li>Connect multiple LLMs (local and cloud) with routing policies</li>
-            <li>Ingest PDFs, Office docs, markdown, web pages and more</li>
-            <li>RAG-style retrieval using vector databases (pgvector, Milvus, etc.)</li>
-            <li>Access control and isolation between different knowledge bases</li>
-          </ul>
-        </div>
-        <div class="border border-slate-800 rounded-2xl p-4 bg-slate-900/50">
-          <h3 class="font-semibold mb-2">Workflows &amp; Automation</h3>
-          <ul class="list-disc list-inside text-slate-300 space-y-1">
-            <li>Visual workflow builder with drag-and-drop nodes</li>
-            <li>Support for cron jobs, webhooks and event-driven triggers</li>
-            <li>Email, Slack, Teams, and webhook integrations</li>
-            <li>Perfect for reports, approvals, order processing and more</li>
-          </ul>
-        </div>
-        <div class="border border-slate-800 rounded-2xl p-4 bg-slate-900/50">
-          <h3 class="font-semibold mb-2">Tools &amp; System Integration</h3>
-          <ul class="list-disc list-inside text-slate-300 space-y-1">
-            <li>HTTP / REST / GraphQL API calls as tools</li>
-            <li>Database read/write with transaction control</li>
-            <li>Script execution, background jobs, queues</li>
-            <li>Use LocalMind as an AI middle-tier between UIs and legacy systems</li>
-          </ul>
-        </div>
-        <div class="border border-slate-800 rounded-2xl p-4 bg-slate-900/50">
-          <h3 class="font-semibold mb-2">Security, Permissions &amp; Ops</h3>
-          <ul class="list-disc list-inside text-slate-300 space-y-1">
-            <li>Role-based access control (RBAC)</li>
-            <li>Audit logs and activity tracking</li>
-            <li>Docker-based deployment, Kubernetes-ready</li>
-            <li>Monitoring hooks (Prometheus, ELK and more)</li>
-          </ul>
-        </div>
-      </div>
-    </section>
-
-    <!-- Use Cases -->
-    <section id="cases" class="py-10 border-t border-slate-800">
-      <h2 class="text-2xl sm:text-3xl font-semibold mb-3">Typical Use Cases</h2>
-      <p class="text-sm sm:text-base text-slate-300 mb-6">
-        These are some of the fastest-to-value use cases. In practice, we design flows around your
-        actual processes, systems and team structure.
-      </p>
-      <div class="grid md:grid-cols-3 gap-6 text-xs sm:text-sm">
-        <div class="border border-slate-800 rounded-2xl p-4 bg-slate-900/60">
-          <h3 class="font-semibold mb-2">AI Support &amp; Customer Service</h3>
-          <ul class="space-y-1 text-slate-300">
-            <li>• Ingest existing tickets, FAQs and internal docs</li>
-            <li>• Answer common questions fully on-premise</li>
-            <li>• Draft responses for complex cases for human review</li>
-            <li>• Integrate with email, ticketing and chat systems</li>
-          </ul>
-        </div>
-        <div class="border border-slate-800 rounded-2xl p-4 bg-slate-900/60">
-          <h3 class="font-semibold mb-2">Orders &amp; Inventory Copilot</h3>
-          <ul class="space-y-1 text-slate-300">
-            <li>• Unified view over multi-channel orders</li>
-            <li>• AI-generated replenishment suggestions and alerts</li>
-            <li>• Automatic flagging of problematic orders</li>
-            <li>• Real-time integration with ERP / WMS</li>
-          </ul>
-        </div>
-        <div class="border border-slate-800 rounded-2xl p-4 bg-slate-900/60">
-          <h3 class="font-semibold mb-2">Document &amp; Reporting Automation</h3>
-          <ul class="space-y-1 text-slate-300">
-            <li>• Read contracts, agreements, PDFs and extract key fields</li>
-            <li>• Write structured data into databases or spreadsheets</li>
-            <li>• Auto-generate daily / weekly / monthly reports</li>
-            <li>• Export polished summaries as Excel or PDF</li>
-          </ul>
-        </div>
-      </div>
-    </section>
-
-    <!-- Pricing -->
-    <section id="pricing" class="py-10 border-t border-slate-800">
-      <h2 class="text-2xl sm:text-3xl font-semibold mb-3">Service Packages (Example)</h2>
-      <p class="text-sm sm:text-base text-slate-300 mb-6">
-        Actual pricing depends on your environment, integration scope and support needs.
-        The tiers below are typical starting points for most clients.
-      </p>
-      <div class="grid md:grid-cols-3 gap-6 text-sm">
-        <div class="border border-slate-800 rounded-2xl p-5 bg-slate-900/60 flex flex-col">
-          <h3 class="font-semibold mb-1">Starter · Pilot Deployment</h3>
-          <div class="text-indigo-300 font-semibold mb-2">From $4,000</div>
-          <ul class="space-y-1 text-slate-300 text-xs sm:text-sm mb-4">
-            <li>• Single-server Docker deployment</li>
-            <li>• 1 primary LLM backend integrated</li>
-            <li>• 2–3 workflows or agents configured</li>
-            <li>• 1 remote training session (up to 2 hours)</li>
-            <li>• 14 days of email support</li>
-          </ul>
-          <button class="mt-auto w-full px-4 py-2 rounded-full border border-slate-600 hover:border-indigo-400 hover:text-indigo-300 text-xs">
-            Discuss this package
-          </button>
-        </div>
-        <div class="border-2 border-indigo-500 rounded-2xl p-5 bg-slate-900 flex flex-col shadow-lg shadow-indigo-500/20">
-          <h3 class="font-semibold mb-1">Standard · Department Roll-Out</h3>
-          <div class="text-indigo-300 font-semibold mb-2">From $10,000</div>
-          <ul class="space-y-1 text-slate-300 text-xs sm:text-sm mb-4">
-            <li>• GPU-accelerated deployment (1–2 servers)</li>
-            <li>• Multiple LLMs with routing and fallbacks</li>
-            <li>• 5–10 customized agents / workflows</li>
-            <li>• Integration with 1–2 core systems (e.g. ERP / CRM)</li>
-            <li>• 30 days of support plus documentation</li>
-            <li>• Optional maintenance: from $600 / month</li>
-          </ul>
-          <button class="mt-auto w-full px-4 py-2 rounded-full bg-indigo-500 hover:bg-indigo-400 text-xs font-medium">
-            Most popular · Request assessment
-          </button>
-        </div>
-        <div class="border border-slate-800 rounded-2xl p-5 bg-slate-900/60 flex flex-col">
-          <h3 class="font-semibold mb-1">Enterprise · AI Platform</h3>
-          <div class="text-indigo-300 font-semibold mb-2">From $25,000 (custom)</div>
-          <ul class="space-y-1 text-slate-300 text-xs sm:text-sm mb-4">
-            <li>• Multi-node, highly available architecture</li>
-            <li>• Organization-wide agent and workflow strategy</li>
-            <li>• Deep integrations across ERP / CRM / WMS / data warehouse</li>
-            <li>• Security, auditing and governance design</li>
-            <li>• Ongoing optimization and roadmap planning</li>
-          </ul>
-          <button class="mt-auto w-full px-4 py-2 rounded-full border border-slate-600 hover:border-indigo-400 hover:text-indigo-300 text-xs">
-            Book an executive briefing
-          </button>
-        </div>
-      </div>
-    </section>
-
-    <!-- About -->
-    <section id="about" class="py-10 border-t border-slate-800">
-      <h2 class="text-2xl sm:text-3xl font-semibold mb-3">About LocalMind AI</h2>
-      <div class="grid md:grid-cols-2 gap-6 text-sm text-slate-300">
-        <p>
-          LocalMind AI is an independent engineering studio focused on on-premise AI systems.
-          Our team has 10+ years of experience building production software and integrating
-          enterprise systems across e-commerce, logistics, and manufacturing.
+      <!-- Product Features -->
+      <section id="features" class="py-10 border-t border-slate-800">
+        <h2 class="text-2xl sm:text-3xl font-semibold mb-3">
+          Product Capabilities
+        </h2>
+        <p class="text-sm sm:text-base text-slate-300 mb-6">
+          From model management and knowledge retrieval to workflow automation
+          and system integration, LocalMind AI gives you a flexible toolkit to
+          design and operate AI agents at scale.
         </p>
-        <p>
-          We believe every company deserves its own “digital brain” running inside its own
-          infrastructure – not a black-box SaaS that locks your data away.
-          Our job is to translate the latest LLM and agent technologies into reliable systems
-          that your teams can actually use in day-to-day operations.
-        </p>
-      </div>
-    </section>
 
-    <!-- Contact -->
-    <section id="contact" class="py-10 border-t border-slate-800 mb-12">
-      <h2 class="text-2xl sm:text-3xl font-semibold mb-3">Contact</h2>
-      <p class="text-sm sm:text-base text-slate-300 mb-6">
-        Tell us what systems you currently use (ERP, CRM, marketplaces, custom tools, etc.)
-        and which workflows you’d like to improve with AI. We’ll come back with an initial
-        proposal and ballpark estimate.
-      </p>
-      <div class="grid md:grid-cols-2 gap-6 text-sm">
-        <div class="border border-slate-800 rounded-2xl p-5 bg-slate-900/60">
-          <h3 class="font-semibold mb-2">Contact details</h3>
-          <ul class="space-y-2 text-slate-300">
-            <li>Company: LocalMind AI (example brand)</li>
-            <li>Email: <a href="mailto:workad_009@icloud.com" class="text-indigo-300 hover:text-indigo-200">workad_009@icloud.com</a></li>
-            <li>Region: Remote-first, serving clients in North America, Europe and Asia</li>
-            <li>Languages: English &amp; Chinese available</li>
-          </ul>
+        <div class="grid md:grid-cols-2 gap-4 text-xs sm:text-sm">
+          <div
+            class="border border-slate-800 rounded-2xl p-4 bg-slate-900/50"
+          >
+            <h3 class="font-semibold mb-2">Models &amp; Knowledge Bases</h3>
+            <ul class="list-disc list-inside text-slate-300 space-y-1">
+              <li>
+                Connect multiple LLMs (local and cloud) with routing policies
+              </li>
+              <li>
+                Ingest PDFs, Office docs, markdown, web pages and more
+              </li>
+              <li>
+                RAG-style retrieval using vector databases (pgvector, Milvus,
+                etc.)
+              </li>
+              <li>
+                Access control and isolation between different knowledge bases
+              </li>
+            </ul>
+          </div>
+
+          <div
+            class="border border-slate-800 rounded-2xl p-4 bg-slate-900/50"
+          >
+            <h3 class="font-semibold mb-2">Workflows &amp; Automation</h3>
+            <ul class="list-disc list-inside text-slate-300 space-y-1">
+              <li>
+                Visual workflow builder with drag-and-drop nodes
+              </li>
+              <li>Support for cron jobs, webhooks and event-driven triggers</li>
+              <li>Email, Slack, Teams, and webhook integrations</li>
+              <li>
+                Perfect for reports, approvals, order processing and more
+              </li>
+            </ul>
+          </div>
+
+          <div
+            class="border border-slate-800 rounded-2xl p-4 bg-slate-900/50"
+          >
+            <h3 class="font-semibold mb-2">
+              Tools &amp; System Integration
+            </h3>
+            <ul class="list-disc list-inside text-slate-300 space-y-1">
+              <li>HTTP / REST / GraphQL API calls as tools</li>
+              <li>Database read/write with transaction control</li>
+              <li>Script execution, background jobs, queues</li>
+              <li>
+                Use LocalMind as an AI middle-tier between UIs and legacy
+                systems
+              </li>
+            </ul>
+          </div>
+
+          <div
+            class="border border-slate-800 rounded-2xl p-4 bg-slate-900/50"
+          >
+            <h3 class="font-semibold mb-2">
+              Security, Permissions &amp; Ops
+            </h3>
+            <ul class="list-disc list-inside text-slate-300 space-y-1">
+              <li>Role-based access control (RBAC)</li>
+              <li>Audit logs and activity tracking</li>
+              <li>Docker-based deployment, Kubernetes-ready</li>
+              <li>Monitoring hooks (Prometheus, ELK and more)</li>
+            </ul>
+          </div>
         </div>
-        <div class="border border-slate-800 rounded-2xl p-5 bg-slate-900/60">
-          <h3 class="font-semibold mb-2">Quick inquiry</h3>
-          <form class="space-y-3 text-xs sm:text-sm">
-            <div>
-              <label class="block mb-1 text-slate-300">Name</label>
-              <input type="text" class="w-full rounded-lg bg-slate-900 border border-slate-700 px-3 py-2 text-slate-100 text-sm" placeholder="Your name" />
-            </div>
-            <div>
-              <label class="block mb-1 text-slate-300">Work email</label>
-              <input type="email" class="w-full rounded-lg bg-slate-900 border border-slate-700 px-3 py-2 text-slate-100 text-sm" placeholder="you@company.com" />
-            </div>
-            <div>
-              <label class="block mb-1 text-slate-300">Company &amp; industry</label>
-              <input type="text" class="w-full rounded-lg bg-slate-900 border border-slate-700 px-3 py-2 text-slate-100 text-sm" placeholder="e.g. e-commerce, manufacturing, logistics..." />
-            </div>
-            <div>
-              <label class="block mb-1 text-slate-300">What are you looking to build?</label>
-              <textarea rows="3" class="w-full rounded-lg bg-slate-900 border border-slate-700 px-3 py-2 text-slate-100 text-sm" placeholder="Briefly describe your systems and AI ideas."></textarea>
-            </div>
-            <button type="button" class="w-full px-4 py-2 rounded-full bg-indigo-500 hover:bg-indigo-400 text-xs sm:text-sm font-medium">
-              Submit (demo button – connect to your backend)
+      </section>
+
+      <!-- Use Cases -->
+      <section id="cases" class="py-10 border-t border-slate-800">
+        <h2 class="text-2xl sm:text-3xl font-semibold mb-3">
+          Typical Use Cases
+        </h2>
+        <p class="text-sm sm:text-base text-slate-300 mb-6">
+          These are some of the fastest-to-value use cases. In practice, we
+          design flows around your actual processes, systems and team
+          structure.
+        </p>
+
+        <div class="grid md:grid-cols-3 gap-6 text-xs sm:text-sm">
+          <div
+            class="border border-slate-800 rounded-2xl p-4 bg-slate-900/60"
+          >
+            <h3 class="font-semibold mb-2">AI Support &amp; Customer Service</h3>
+            <ul class="space-y-1 text-slate-300">
+              <li>• Ingest existing tickets, FAQs and internal docs</li>
+              <li>• Answer common questions fully on-premise</li>
+              <li>• Draft responses for complex cases for human review</li>
+              <li>• Integrate with email, ticketing and chat systems</li>
+            </ul>
+          </div>
+
+          <div
+            class="border border-slate-800 rounded-2xl p-4 bg-slate-900/60"
+          >
+            <h3 class="font-semibold mb-2">Orders &amp; Inventory Copilot</h3>
+            <ul class="space-y-1 text-slate-300">
+              <li>• Unified view over multi-channel orders</li>
+              <li>• AI-generated replenishment suggestions and alerts</li>
+              <li>• Automatic flagging of problematic orders</li>
+              <li>• Real-time integration with ERP / WMS</li>
+            </ul>
+          </div>
+
+          <div
+            class="border border-slate-800 rounded-2xl p-4 bg-slate-900/60"
+          >
+            <h3 class="font-semibold mb-2">
+              Document &amp; Reporting Automation
+            </h3>
+            <ul class="space-y-1 text-slate-300">
+              <li>
+                • Read contracts, agreements, PDFs and extract key fields
+              </li>
+              <li>
+                • Write structured data into databases or spreadsheets
+              </li>
+              <li>• Auto-generate daily / weekly / monthly reports</li>
+              <li>• Export polished summaries as Excel or PDF</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <!-- Pricing -->
+      <section id="pricing" class="py-10 border-t border-slate-800">
+        <h2 class="text-2xl sm:text-3xl font-semibold mb-3">
+          Service Packages (Example)
+        </h2>
+        <p class="text-sm sm:text-base text-slate-300 mb-6">
+          Actual pricing depends on your environment, integration scope and
+          support needs. The tiers below are typical starting points for most
+          clients.
+        </p>
+
+        <div class="grid md:grid-cols-3 gap-6 text-sm">
+          <div
+            class="border border-slate-800 rounded-2xl p-5 bg-slate-900/60 flex flex-col"
+          >
+            <h3 class="font-semibold mb-1">Starter · Pilot Deployment</h3>
+            <div class="text-indigo-300 font-semibold mb-2">From $4,000</div>
+            <ul class="space-y-1 text-slate-300 text-xs sm:text-sm mb-4">
+              <li>• Single-server Docker deployment</li>
+              <li>• 1 primary LLM backend integrated</li>
+              <li>• 2–3 workflows or agents configured</li>
+              <li>• 1 remote training session (up to 2 hours)</li>
+              <li>• 14 days of email support</li>
+            </ul>
+            <button
+              class="mt-auto w-full px-4 py-2 rounded-full border border-slate-600 hover:border-indigo-400 hover:text-indigo-300 text-xs"
+            >
+              Discuss this package
             </button>
-          </form>
+          </div>
+
+          <div
+            class="border-2 border-indigo-500 rounded-2xl p-5 bg-slate-900 flex flex-col shadow-lg shadow-indigo-500/20"
+          >
+            <h3 class="font-semibold mb-1">Standard · Department Roll-Out</h3>
+            <div class="text-indigo-300 font-semibold mb-2">From $10,000</div>
+            <ul class="space-y-1 text-slate-300 text-xs sm:text-sm mb-4">
+              <li>• GPU-accelerated deployment (1–2 servers)</li>
+              <li>• Multiple LLMs with routing and fallbacks</li>
+              <li>• 5–10 customized agents / workflows</li>
+              <li>
+                • Integration with 1–2 core systems (e.g. ERP / CRM)
+              </li>
+              <li>• 30 days of support plus documentation</li>
+              <li>• Optional maintenance: from $600 / month</li>
+            </ul>
+            <button
+              class="mt-auto w-full px-4 py-2 rounded-full bg-indigo-500 hover:bg-indigo-400 text-xs font-medium"
+            >
+              Most popular · Request assessment
+            </button>
+          </div>
+
+          <div
+            class="border border-slate-800 rounded-2xl p-5 bg-slate-900/60 flex flex-col"
+          >
+            <h3 class="font-semibold mb-1">Enterprise · AI Platform</h3>
+            <div class="text-indigo-300 font-semibold mb-2">
+              From $25,000 (custom)
+            </div>
+            <ul class="space-y-1 text-slate-300 text-xs sm:text-sm mb-4">
+              <li>• Multi-node, highly available architecture</li>
+              <li>• Organization-wide agent and workflow strategy</li>
+              <li>
+                • Deep integrations across ERP / CRM / WMS / data warehouse
+              </li>
+              <li>• Security, auditing and governance design</li>
+              <li>• Ongoing optimization and roadmap planning</li>
+            </ul>
+            <button
+              class="mt-auto w-full px-4 py-2 rounded-full border border-slate-600 hover:border-indigo-400 hover:text-indigo-300 text-xs"
+            >
+              Book an executive briefing
+            </button>
+          </div>
         </div>
-      </div>
-    </section>
-  </main>
+      </section>
 
-  <footer class="border-t border-slate-800 py-4 text-center text-[11px] text-slate-500">
-    © <span id="year"></span> LocalMind AI. All rights reserved.
-  </footer>
+      <!-- About -->
+      <section id="about" class="py-10 border-t border-slate-800">
+        <h2 class="text-2xl sm:text-3xl font-semibold mb-3">
+          About LocalMind AI
+        </h2>
+        <div class="grid md:grid-cols-2 gap-6 text-sm text-slate-300">
+          <p>
+            LocalMind AI is an independent engineering studio focused on
+            on-premise AI systems. Our team has 10+ years of experience building
+            production software and integrating enterprise systems across
+            e-commerce, logistics, and manufacturing.
+          </p>
+          <p>
+            We believe every company deserves its own “digital brain” running
+            inside its own infrastructure – not a black-box SaaS that locks your
+            data away. Our job is to translate the latest LLM and agent
+            technologies into reliable systems that your teams can actually use
+            in day-to-day operations.
+          </p>
+        </div>
+      </section>
 
-  <script>
-    document.getElementById('year').textContent = new Date().getFullYear();
-  </script>
-</body>
+      <!-- Contact -->
+      <section id="contact" class="py-10 border-t border-slate-800 mb-12">
+        <h2 class="text-2xl sm:text-3xl font-semibold mb-3">Contact</h2>
+        <p class="text-sm sm:text-base text-slate-300 mb-6">
+          Tell us what systems you currently use (ERP, CRM, marketplaces,
+          custom tools, etc.) and which workflows you’d like to improve with AI.
+          We’ll come back with an initial proposal and ballpark estimate.
+        </p>
+
+        <div class="grid md:grid-cols-2 gap-6 text-sm">
+          <div
+            class="border border-slate-800 rounded-2xl p-5 bg-slate-900/60"
+          >
+            <h3 class="font-semibold mb-2">Contact details</h3>
+            <ul class="space-y-2 text-slate-300">
+              <li>Company: LocalMind AI (example brand)</li>
+              <li>
+                Email:
+                <a
+                  href="mailto:workad_009@icloud.com"
+                  class="text-indigo-300 hover:text-indigo-200"
+                  >workad_009@icloud.com</a
+                >
+              </li>
+              <li>
+                Region: Remote-first, serving clients in North America, Europe
+                and Asia
+              </li>
+              <li>Languages: English &amp; Chinese available</li>
+            </ul>
+          </div>
+
+          <div
+            class="border border-slate-800 rounded-2xl p-5 bg-slate-900/60"
+          >
+            <h3 class="font-semibold mb-2">Quick inquiry</h3>
+            <form class="space-y-3 text-xs sm:text-sm">
+              <div>
+                <label class="block mb-1 text-slate-300">Name</label>
+                <input
+                  type="text"
+                  class="w-full rounded-lg bg-slate-900 border border-slate-700 px-3 py-2 text-slate-100 text-sm"
+                  placeholder="Your name"
+                />
+              </div>
+              <div>
+                <label class="block mb-1 text-slate-300">Work email</label>
+                <input
+                  type="email"
+                  class="w-full rounded-lg bg-slate-900 border border-slate-700 px-3 py-2 text-slate-100 text-sm"
+                  placeholder="you@company.com"
+                />
+              </div>
+              <div>
+                <label class="block mb-1 text-slate-300"
+                  >Company &amp; industry</label
+                >
+                <input
+                  type="text"
+                  class="w-full rounded-lg bg-slate-900 border border-slate-700 px-3 py-2 text-slate-100 text-sm"
+                  placeholder="e.g. e-commerce, manufacturing, logistics..."
+                />
+              </div>
+              <div>
+                <label class="block mb-1 text-slate-300"
+                  >What are you looking to build?</label
+                >
+                <textarea
+                  rows="3"
+                  class="w-full rounded-lg bg-slate-900 border border-slate-700 px-3 py-2 text-slate-100 text-sm"
+                  placeholder="Briefly describe your systems and AI ideas."
+                ></textarea>
+              </div>
+              <button
+                type="button"
+                class="w-full px-4 py-2 rounded-full bg-indigo-500 hover:bg-indigo-400 text-xs sm:text-sm font-medium"
+              >
+                Submit (demo button – connect to your backend)
+              </button>
+            </form>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer
+      class="border-t border-slate-800 py-4 text-center text-[11px] text-slate-500"
+    >
+      © <span id="year"></span> LocalMind AI. All rights reserved.
+    </footer>
+
+    <script>
+      document.getElementById('year').textContent =
+        new Date().getFullYear();
+    </script>
+  </body>
 </html>
